@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+       table, th, td {
+            border: 2px solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+    <table> 
+        <thead>
+            <tr>
+                <th>Name</th> 
+                <th colspan="2">heading</th> 
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ram</td>
+                <td>tdata</td>
+                <td rowspan="2">tdata</td> 
+            </tr> 
+            <tr>
+                <td>Ram</td>
+                <td>tdata</td> 
+            </tr>  
+        </tbody> 
+    </table>
+
+
+    <table>
+
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">average</th>
+                <th rowspan="2">red eyes</th>
+            </tr> 
+            <tr>
+                <th>height</th>
+                <th>weight</th>
+            </tr> 
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Males</td>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr> 
+        </tbody>
+
+    </table>
+
+    
+</body>
+</html>
