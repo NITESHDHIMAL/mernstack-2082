@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+
+<body>
+
+    <form action="">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" name="name"> <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" name="email"> <br>
+
+        <fieldset>
+            <legend>Are you sure?</legend>
+
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="confirm" value="yes"> <br>
+
+            <label for="no">No</label>
+            <input type="radio" id="no" name="confirm" value="no"> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Choose Courses:</legend>
+
+            <label for="python">python</label>
+            <input type="checkbox" id="python" name="confirm" value="python"> <br>
+
+            <label for="django">django</label>
+            <input type="checkbox" id="django" name="confirm" value="django"> <br>
+
+            <label for="php">php</label>
+            <input type="checkbox" id="php" name="confirm" value="php"> <br>
+        </fieldset>
+
+        <!-- ctrl + d  -->
+        <!-- crtl + shift + l  -->
+
+        <label for="phone">phone</label>
+        <input type="number" id="phone" min="1" max="5" placeholder="Enter your phone" name="phone"> <br>
+       
+        <label for="password">password</label>
+        <input type="password" id="password" placeholder="Enter your password" name="password"> <br>
+      
+        <label for="color">color</label>
+        <input type="color" id="color" placeholder="Enter your color" name="color"> <br>
+       
+        <label for="file">file</label>
+        <input type="file" id="file" placeholder="Enter your file" name="file"> <br>
+       
+        <label for="range">range</label>
+        <input type="range" id="range" placeholder="Enter your range" name="range"> <br>
+      
+        <label for="time">time</label>
+        <input type="time" id="time" placeholder="Enter your time" name="time"> <br>
+        
+        <label for="date">date</label>
+        <input type="date" id="date" placeholder="Enter your date" name="date"> <br>
+      
+        <label for="url">url</label>
+        <input type="url" id="url" placeholder="Enter your url" name="url"> <br>
+       
+        <label for="dateandtime">date and time</label>
+        <input type="datetime-local" id="dateandtime" placeholder="Enter your dateandtime" name="dateandtime"> <br>
+
+        <label for="search">Search here</label>
+        <input type="search" id="search" placeholder="Enter your search" name="search"> <br>
+        
+        <label for="tel">tel</label>
+        <input type="tel" id="tel" placeholder="Enter your tel" name="tel"> <br>
+        <br> 
+        <!-- <input type="image" src=""> -->
+        <!-- <input type="submit" value="submit"> -->
+        <button type="submit">Save</button>
+    </form>
+
+</body>
+
+</html>
