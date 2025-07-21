@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+
+    <style>
+
+        /* selector {
+            property: value;
+        } */
+
+        /* selector types: 
+        1. id selector 
+        2. class selector
+        3. element selector 
+        4. universal 
+        5. groping
+        6. pseudo selector 
+        7. attribute selector  */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* element selector eg:  */
+        h1{
+            color: green;
+        } 
+
+        #inline{
+            color: blue;
+        } 
+        .brown{
+            color: brown;
+        }
+
+        h1, p, span {
+            color: yellow;
+        }
+
+        p:hover {
+            color: aquamarine;
+            font-size: 20px;
+            cursor: pointer; 
+        }
+
+        /* attribute selector  */
+        img[alt="mern"] {
+            width: 200px;
+        } 
+
+
+    </style>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body> 
+    <h1>Css Methods:</h1>
+    <ol>
+        <li id="inline">Inline css</li>
+        <li class="brown">Internal css</li>
+        <li class="brown">External css</li>
+    </ol> 
+    <h1 style="color: aqua;">7 Innovations Shaping the Future of Technology</h1> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quibusdam cumque voluptatibus sit voluptate laudantium obcaecati ea ducimus. Recusandae quam quidem nisi aliquam pariatur. Commodi, dolores. Maxime inventore animi pariatur!</p>
+
+    <span>this is groping selector</span>
+
+
+    <img src="https://www.mindrisers.com.np/static/Images/courses/Mernstack.webp" alt="mern">
+
+    <img src="https://www.mindrisers.com.np/static/Images/courses/Python_with_Django.webp" alt="python">
+
+</body>
+</html>
