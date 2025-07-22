@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        .position{
+            border: 4px solid red;
+            width: 500px;
+            position: relative;
+        }
+        .child{
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            align-content: center;
+        }
+        #static{
+            margin-top: 100px;
+            background-color: green;
+            position: static;
+        }
+        #relative{
+            /* top,bottom,left,right  */
+            background-color: brown;
+            top: 5rem;
+            /* position: relative;  */
+        }
+        #absolute{
+            background-color: aqua;
+            top:0;
+            /* bottom: 0; */
+            right: 0;
+            position: absolute; 
+        }
+        #fixed{ 
+            background-color: lightcoral;
+            position: fixed;
+            right: 0;
+        }
+        #sticky{ 
+            background-color: lightsalmon;
+            position: sticky;
+            top: 0px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <h1>Position Types:</h1>
+    <ol>
+        <li>static(default)</li>
+        <li>fixed(scroll)</li>
+        <li>absolute(relative to the near parent position)</li>
+        <li>relative(normal position)</li>
+        <li>sticky(scroll)</li>
+    </ol> 
+ -->
+
+    <div class="position">
+        <div class="child" id="static">static</div>
+        <div class="child" id="relative">relative</div>
+        <div class="child" id="absolute">absolute</div>
+        <div class="child" id="fixed">fixed</div>
+    </div>
+    <div class="child" id="sticky">sticky</div>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque saepe harum maiores id magnam voluptatibus quia numquam possimus. Corporis ratione natus veniam, accusamus rerum facere dolores aliquam corrupti ullam ipsum!</p>
+
+</body>
+</html>
