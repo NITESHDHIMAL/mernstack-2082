@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: green;
+            transition: all 2s;
+        }
+
+
+        .box:hover{
+            /* transform: rotate(360deg); */
+            /* transform: rotateX(360deg); */
+            /* transform: rotateY(360deg); */
+            cursor: pointer;
+
+            /* transform: skew(30deg); */
+            /* transform: skewX(30deg); */
+            /* transform: skewY(30deg); */
+
+            /* transform: scale(2); */
+            /* transform: scaleY(2); */
+            /* transform: scaleX(2); */
+            
+            /* transform: translate(x,y); */
+            /* transform: translate(200px,200px); */
+            /* transform: translateX(200px); */
+            transform: translateY(200px);
+     
+        }
+
+        img{
+            animation: rotateImage 2s linear infinite;
+        }
+
+        @keyframes rotateImage {
+            from{
+                transform: rotate(0);
+            } to{
+                transform: rotate(360deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+        <div class="box"></div> 
+        <!-- <img src="https://themewagon.github.io/restoran/img/hero.png" alt="" width="400"> -->
+</body>
+</html>
